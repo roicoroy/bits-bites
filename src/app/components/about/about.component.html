@@ -1,0 +1,55 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let post of posts">
+        <div class="card mb-3">
+            <div class="text-white text-center d-flex align-items-center deep-orange py-2 px-2">
+                <div [innerHTML]="post.content.rendered">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div> -->
+
+<section *ngFor="let post of posts" class="mt-5 py-4 text-center text-lg-left">
+        {{
+            post.content.rendered | json
+        }}
+        <!-- <img src="" class=""/> -->
+    <!-- <h2 class="h1 font-weight-bold text-center mb-5 pt-4" [innerHTML]="post.title.rendered">
+    </h2>
+    <p class="text-center mb-5 pb-3" [innerHTML]="post.excerpt.rendered">
+    </p>
+    <div class="row">
+        <div class="col-lg-5 col-xl-5 pb-3">
+            
+            <div class="view overlay rounded z-depth-2 waves-light" mdbWavesEffect>
+                <img src="{{ post. }}"
+                    class="img-fluid">
+                  
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-7 col-xl-7">
+            
+            <a href="" class="green-text">
+                <h6 class="font-weight-bold pb-1">
+                    <i class="fa fa-cutlery"></i> Food</h6>
+            </a>
+            <h3 class="mb-4 font-weight-bold dark-grey-text">
+                <strong>This is title of the news</strong>
+            </h3>
+            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
+                debitis aut rerum.</p>
+            <p>by
+                <a>
+                    <strong>Carine Fox</strong>
+                </a>, 19/08/2018</p>
+            <a mdbBtn color="success" class="mb-3 waves-light" mdbWavesEffect>Read more</a>
+        </div>
+    </div>
+    <hr class="mb-5 mt-5 pb-3"> -->
+</section>

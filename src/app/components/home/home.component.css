@@ -1,0 +1,24 @@
+body,
+html {
+  height: 100%;
+}
+
+.view {
+  height: 100vh !important;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../../../assets/intro-1.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+agm-map {
+  height: 300px;
+}
